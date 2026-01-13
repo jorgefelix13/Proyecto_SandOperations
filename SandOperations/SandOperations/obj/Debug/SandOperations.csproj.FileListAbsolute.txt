@@ -1,0 +1,14 @@
+D:\SandOperation\Proyecto_SandOperations\SandOperations\SandOperations\obj\Debug\SandOperations.csproj.AssemblyReference.cache
+D:\SandOperation\Proyecto_SandOperations\SandOperations\SandOperations\obj\Debug\SandOperations.Properties.Resources.resources
+D:\SandOperation\Proyecto_SandOperations\SandOperations\SandOperations\obj\Debug\SandOperations.csproj.GenerateResource.cache
+D:\SandOperation\Proyecto_SandOperations\SandOperations\SandOperations\obj\Debug\SandOperations.csproj.CoreCompileInputs.cache
+D:\SandOperation\Proyecto_SandOperations\SandOperations\SandOperations\bin\Debug\SandOperations.exe.config
+D:\SandOperation\Proyecto_SandOperations\SandOperations\SandOperations\bin\Debug\SandOperations.exe
+D:\SandOperation\Proyecto_SandOperations\SandOperations\SandOperations\bin\Debug\SandOperations.pdb
+D:\SandOperation\Proyecto_SandOperations\SandOperations\SandOperations\obj\Debug\SandOperations.exe
+D:\SandOperation\Proyecto_SandOperations\SandOperations\SandOperations\obj\Debug\SandOperations.pdb
+D:\SandOperation\Proyecto_SandOperations\SandOperations\SandOperations\obj\Debug\SandOperations.exe.config
+D:\SandOperation\Proyecto_SandOperations\SandOperations\SandOperations\obj\Debug\SandOperations.FormLogin.resources
+D:\SandOperation\Proyecto_SandOperations\SandOperations\SandOperations\obj\Debug\SandOperations.FormMenu.resources
+D:\SandOperation\Proyecto_SandOperations\SandOperations\SandOperations\obj\Debug\SandOperations.FormUsuario.resources
+D:\SandOperation\Proyecto_SandOperations\SandOperations\SandOperations\obj\Debug\SandOperations.FormProducto.resources
