@@ -32,27 +32,26 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.rdbEmpleado = new System.Windows.Forms.RadioButton();
+            this.rdbAdministrador = new System.Windows.Forms.RadioButton();
+            this.rdbInactivo = new System.Windows.Forms.RadioButton();
+            this.rdbActivo = new System.Windows.Forms.RadioButton();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.rdbEmpleado = new System.Windows.Forms.RadioButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.rdbAdministrador = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvUsuarios = new System.Windows.Forms.DataGridView();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.rdbInactivo = new System.Windows.Forms.RadioButton();
-            this.rdbActivo = new System.Windows.Forms.RadioButton();
             this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtId = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -77,7 +76,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtId);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.rdbInactivo);
             this.groupBox1.Controls.Add(this.rdbActivo);
@@ -95,6 +93,70 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informacion Usuario";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.rdbEmpleado);
+            this.groupBox2.Controls.Add(this.rdbAdministrador);
+            this.groupBox2.Location = new System.Drawing.Point(559, 20);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(223, 116);
+            this.groupBox2.TabIndex = 13;
+            this.groupBox2.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 36);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 25);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Rol";
+            // 
+            // rdbEmpleado
+            // 
+            this.rdbEmpleado.AutoSize = true;
+            this.rdbEmpleado.Checked = true;
+            this.rdbEmpleado.Location = new System.Drawing.Point(54, 70);
+            this.rdbEmpleado.Name = "rdbEmpleado";
+            this.rdbEmpleado.Size = new System.Drawing.Size(121, 29);
+            this.rdbEmpleado.TabIndex = 4;
+            this.rdbEmpleado.TabStop = true;
+            this.rdbEmpleado.Text = "Empleado";
+            this.rdbEmpleado.UseVisualStyleBackColor = true;
+            // 
+            // rdbAdministrador
+            // 
+            this.rdbAdministrador.AutoSize = true;
+            this.rdbAdministrador.Location = new System.Drawing.Point(54, 34);
+            this.rdbAdministrador.Name = "rdbAdministrador";
+            this.rdbAdministrador.Size = new System.Drawing.Size(153, 29);
+            this.rdbAdministrador.TabIndex = 2;
+            this.rdbAdministrador.Text = "Administrador";
+            this.rdbAdministrador.UseVisualStyleBackColor = true;
+            // 
+            // rdbInactivo
+            // 
+            this.rdbInactivo.AutoSize = true;
+            this.rdbInactivo.Location = new System.Drawing.Point(323, 90);
+            this.rdbInactivo.Name = "rdbInactivo";
+            this.rdbInactivo.Size = new System.Drawing.Size(100, 29);
+            this.rdbInactivo.TabIndex = 12;
+            this.rdbInactivo.Text = "Inactivo";
+            this.rdbInactivo.UseVisualStyleBackColor = true;
+            // 
+            // rdbActivo
+            // 
+            this.rdbActivo.AutoSize = true;
+            this.rdbActivo.Checked = true;
+            this.rdbActivo.Location = new System.Drawing.Point(162, 90);
+            this.rdbActivo.Name = "rdbActivo";
+            this.rdbActivo.Size = new System.Drawing.Size(87, 29);
+            this.rdbActivo.TabIndex = 10;
+            this.rdbActivo.TabStop = true;
+            this.rdbActivo.Text = "Activo";
+            this.rdbActivo.UseVisualStyleBackColor = true;
             // 
             // btnActualizar
             // 
@@ -130,37 +192,6 @@
             this.txtUsuario.Size = new System.Drawing.Size(133, 30);
             this.txtUsuario.TabIndex = 5;
             // 
-            // rdbEmpleado
-            // 
-            this.rdbEmpleado.AutoSize = true;
-            this.rdbEmpleado.Checked = true;
-            this.rdbEmpleado.Location = new System.Drawing.Point(54, 70);
-            this.rdbEmpleado.Name = "rdbEmpleado";
-            this.rdbEmpleado.Size = new System.Drawing.Size(121, 29);
-            this.rdbEmpleado.TabIndex = 4;
-            this.rdbEmpleado.TabStop = true;
-            this.rdbEmpleado.Text = "Empleado";
-            this.rdbEmpleado.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 36);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 25);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Rol";
-            // 
-            // rdbAdministrador
-            // 
-            this.rdbAdministrador.AutoSize = true;
-            this.rdbAdministrador.Location = new System.Drawing.Point(54, 34);
-            this.rdbAdministrador.Name = "rdbAdministrador";
-            this.rdbAdministrador.Size = new System.Drawing.Size(153, 29);
-            this.rdbAdministrador.TabIndex = 2;
-            this.rdbAdministrador.Text = "Administrador";
-            this.rdbAdministrador.UseVisualStyleBackColor = true;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -179,15 +210,16 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Usuario";
             // 
-            // dataGridView1
+            // dgvUsuarios
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 395);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(864, 270);
-            this.dataGridView1.TabIndex = 3;
+            this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUsuarios.Location = new System.Drawing.Point(18, 395);
+            this.dgvUsuarios.Name = "dgvUsuarios";
+            this.dgvUsuarios.RowHeadersWidth = 51;
+            this.dgvUsuarios.RowTemplate.Height = 24;
+            this.dgvUsuarios.Size = new System.Drawing.Size(864, 270);
+            this.dgvUsuarios.TabIndex = 3;
+            this.dgvUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellClick);
             // 
             // pictureBox2
             // 
@@ -199,28 +231,6 @@
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // rdbInactivo
-            // 
-            this.rdbInactivo.AutoSize = true;
-            this.rdbInactivo.Location = new System.Drawing.Point(323, 90);
-            this.rdbInactivo.Name = "rdbInactivo";
-            this.rdbInactivo.Size = new System.Drawing.Size(100, 29);
-            this.rdbInactivo.TabIndex = 12;
-            this.rdbInactivo.Text = "Inactivo";
-            this.rdbInactivo.UseVisualStyleBackColor = true;
-            // 
-            // rdbActivo
-            // 
-            this.rdbActivo.AutoSize = true;
-            this.rdbActivo.Checked = true;
-            this.rdbActivo.Location = new System.Drawing.Point(162, 90);
-            this.rdbActivo.Name = "rdbActivo";
-            this.rdbActivo.Size = new System.Drawing.Size(87, 29);
-            this.rdbActivo.TabIndex = 10;
-            this.rdbActivo.TabStop = true;
-            this.rdbActivo.Text = "Activo";
-            this.rdbActivo.UseVisualStyleBackColor = true;
-            // 
             // txtBuscar
             // 
             this.txtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -228,24 +238,7 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(864, 30);
             this.txtBuscar.TabIndex = 7;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.rdbEmpleado);
-            this.groupBox2.Controls.Add(this.rdbAdministrador);
-            this.groupBox2.Location = new System.Drawing.Point(559, 20);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(223, 116);
-            this.groupBox2.TabIndex = 13;
-            this.groupBox2.TabStop = false;
-            // 
-            // txtId
-            // 
-            this.txtId.Location = new System.Drawing.Point(224, 15);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(43, 30);
-            this.txtId.TabIndex = 14;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // FormUsuario
             // 
@@ -255,19 +248,20 @@
             this.ClientSize = new System.Drawing.Size(946, 677);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "FormUsuario";
             this.Text = "FormUsuario";
+            this.Load += new System.EventHandler(this.FormUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,7 +278,7 @@
         private System.Windows.Forms.RadioButton rdbAdministrador;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvUsuarios;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button button1;
@@ -293,6 +287,5 @@
         private System.Windows.Forms.RadioButton rdbActivo;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox txtId;
     }
 }

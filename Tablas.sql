@@ -13,7 +13,8 @@ usu_activo bit default 1
 )
 go
 
-select * from usuarios
+select * from usuario
+
 insert into usuarios(usu_usuario,usu_password,usu_rol) values('2602@gmail.com','admin123','administrador')
 go
 
@@ -26,6 +27,9 @@ pro_stock int not null default 0, --default 0 para que inicie en 0 el inventario
 pro_descripcion varchar(250) null
 )
 go
+select * from productos
+insert into productos(pro_codigo, pro_nombre, pro_pCompra, pro_stock, pro_descripcion)
+values('0001', 'pala', 150.50, 50, 'pala para tierra blanda')
 
 create table entradas(
 ent_id int identity primary key,

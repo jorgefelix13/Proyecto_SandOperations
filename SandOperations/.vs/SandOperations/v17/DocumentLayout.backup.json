@@ -3,27 +3,19 @@
   "WorkspaceRootPath": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|d:\\sandoperation\\proyecto_sandoperations\\sandoperations\\sandoperations\\formusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|solutionrelative:sandoperations\\formusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|d:\\sandoperation\\proyecto_sandoperations\\sandoperations\\sandoperations\\formproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|solutionrelative:sandoperations\\formproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|d:\\sandoperation\\proyecto_sandoperations\\sandoperations\\sandoperations\\formusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|solutionrelative:sandoperations\\formusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|d:\\sandoperation\\proyecto_sandoperations\\sandoperations\\sandoperations\\formproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|solutionrelative:sandoperations\\formproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|d:\\sandoperation\\proyecto_sandoperations\\sandoperations\\sandoperations\\gestordb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\sandoperations\\gestordb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|solutionrelative:sandoperations\\gestordb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|d:\\sandoperation\\proyecto_sandoperations\\sandoperations\\sandoperations\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|solutionrelative:sandoperations\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|d:\\sandoperation\\proyecto_sandoperations\\sandoperations\\sandoperations\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|solutionrelative:sandoperations\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|d:\\sandoperation\\proyecto_sandoperations\\sandoperations\\sandoperations\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\sandoperations\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|solutionrelative:sandoperations\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 329,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,53 +34,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "FormProducto.cs",
+              "DocumentMoniker": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\FormProducto.cs",
+              "RelativeDocumentMoniker": "SandOperations\\FormProducto.cs",
+              "ToolTip": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\FormProducto.cs*",
+              "RelativeToolTip": "SandOperations\\FormProducto.cs*",
+              "ViewState": "AgIAACcAAAAAAAAAAAAswDgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T05:32:44.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\FormProducto.cs",
+              "RelativeDocumentMoniker": "SandOperations\\FormProducto.cs",
+              "ToolTip": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\FormProducto.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "SandOperations\\FormProducto.cs [Dise\u00F1o]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T05:31:25.9Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\Program.cs",
               "RelativeDocumentMoniker": "SandOperations\\Program.cs",
               "ToolTip": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\Program.cs",
               "RelativeToolTip": "SandOperations\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBIAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-14T21:41:28.62Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormLogin.cs",
-              "DocumentMoniker": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\FormLogin.cs",
-              "RelativeDocumentMoniker": "SandOperations\\FormLogin.cs",
-              "ToolTip": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\FormLogin.cs",
-              "RelativeToolTip": "SandOperations\\FormLogin.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAASwBYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T21:39:32.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormLogin.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\FormLogin.cs",
-              "RelativeDocumentMoniker": "SandOperations\\FormLogin.cs",
-              "ToolTip": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\FormLogin.cs [Dise\u00F1o]",
-              "RelativeToolTip": "SandOperations\\FormLogin.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T21:39:30.733Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormUsuario.cs",
-              "DocumentMoniker": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\FormUsuario.cs",
-              "RelativeDocumentMoniker": "SandOperations\\FormUsuario.cs",
-              "ToolTip": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\FormUsuario.cs*",
-              "RelativeToolTip": "SandOperations\\FormUsuario.cs*",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAEwEwAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T21:30:53.826Z",
               "EditorCaption": ""
             },
             {
@@ -97,24 +76,12 @@
               "Title": "GestorDB.cs",
               "DocumentMoniker": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\GestorDB.cs",
               "RelativeDocumentMoniker": "SandOperations\\GestorDB.cs",
-              "ToolTip": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\GestorDB.cs*",
-              "RelativeToolTip": "SandOperations\\GestorDB.cs*",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAUwFwAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\GestorDB.cs",
+              "RelativeToolTip": "SandOperations\\GestorDB.cs",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAswLIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-14T21:01:47.363Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormUsuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\FormUsuario.cs",
-              "RelativeDocumentMoniker": "SandOperations\\FormUsuario.cs",
-              "ToolTip": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\FormUsuario.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "SandOperations\\FormUsuario.cs [Dise\u00F1o]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T20:54:12.762Z",
-              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         },

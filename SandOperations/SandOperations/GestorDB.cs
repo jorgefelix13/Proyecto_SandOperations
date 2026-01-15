@@ -14,6 +14,7 @@ namespace SandOperations
         
         Conexion con = new Conexion();
 
+        //esta parte son los metodos para usuarios
         //metodo para el login 
         public string Login(string usuario, string password)
         {
@@ -24,7 +25,7 @@ namespace SandOperations
                 {
                     conexion.Open();
 
-                    string query = "select top 1 usu_rol from usuarios where usu_usuario = @usuario and usu_password = @password ";
+                    string query = "select top 1 usu_rol from usuarios where usu_usuario = @usuario and usu_password = @password and usu_activo = 1";
 
                     SqlCommand command = new SqlCommand(query, conexion);
 
@@ -117,6 +118,64 @@ namespace SandOperations
             catch (Exception ex)
             {
                 MessageBox.Show("Error:" + ex.Message);
+            }
+        }
+
+        //Metodo para mostrar datos al datagritview
+        public DataTable ObtenerUsuarios(string busqueda = "")
+        {
+            DataTable tabla = new DataTable();
+            try
+            {
+                using (SqlConnection conexion = con.Conectar())
+                {
+                    conexion.Open();
+                    // Usamos LIKE para buscar coincidencias parciales
+                    // El '%' sirve para decir "lo que sea que siga"
+                    string query = "SELECT * FROM usuarios WHERE usu_usuario LIKE @busqueda + '%'";
+
+                    SqlCommand command = new SqlCommand(query, conexion);
+                    command.Parameters.AddWithValue("@busqueda", busqueda);
+
+                    // El SqlDataAdapter es como un camión que llena la tabla de golpe
+                    SqlDataAdapter adaptador = new SqlDataAdapter(command);
+                    adaptador.Fill(tabla);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar usuarios: " + ex.Message);
+            }
+            return tabla;
+        }
+
+        //esta parte son los metodos para los productos
+        //Metodo para registrar producto
+        public void RegistrarProducto(string codigo, string nombre, decimal precioCompra, int stock, string descripcion)
+        {
+            try
+            {
+                using (SqlConnection conexion = con.Conectar())
+                {
+                    conexion.Open();
+
+                    string query = "insert into productos(pro_codigo, pro_nombre, pro_pCompra, pro_stock, pro_descripcion) values(@codigo, @nombre, @precioCompra, @stock, @descripcion)";
+
+                    SqlCommand command = new SqlCommand(@query, conexion);
+
+                    command.Parameters.AddWithValue("@codigo", codigo);
+                    command.Parameters.AddWithValue("@nombre", nombre);
+                    command.Parameters.AddWithValue("@precioCompra", precioCompra);
+                    command.Parameters.AddWithValue("@stock", stock);
+                    command.Parameters.AddWithValue("@descripcion", descripcion);
+
+                    command.ExecuteNonQuery();
+
+                    MessageBox.Show("Producto registrado correctamente");
+                }
+            }catch (Exception ex)
+            {
+                MessageBox.Show("Error:"+ex.Message);
             }
         }
     }

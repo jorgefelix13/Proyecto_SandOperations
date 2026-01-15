@@ -14,3 +14,4 @@ D:\SandOperation\Proyecto_SandOperations\SandOperations\SandOperations\obj\Debug
 D:\SandOperation\Proyecto_SandOperations\SandOperations\SandOperations\obj\Debug\SandOperations.exe
 D:\SandOperation\Proyecto_SandOperations\SandOperations\SandOperations\obj\Debug\SandOperations.pdb
 D:\SandOperation\Proyecto_SandOperations\SandOperations\SandOperations\obj\Debug\SandOperations.exe.config
+D:\SandOperation\Proyecto_SandOperations\SandOperations\SandOperations\obj\Debug\SandOperations.FormBuscarProducto.resources
