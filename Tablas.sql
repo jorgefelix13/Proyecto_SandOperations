@@ -31,6 +31,8 @@ select * from productos
 insert into productos(pro_codigo, pro_nombre, pro_pCompra, pro_stock, pro_descripcion)
 values('0001', 'pala', 150.50, 50, 'pala para tierra blanda')
 
+update productos set pro_codigo = '0004', pro_nombre = 'arena', pro_pCompra = 150, pro_stock = 50, pro_descripcion = 'arena blanca' where pro_id = 4
+
 create table entradas(
 ent_id int identity primary key,
 ent_proId int foreign key references productos(pro_id),

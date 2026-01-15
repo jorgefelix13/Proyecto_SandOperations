@@ -178,5 +178,62 @@ namespace SandOperations
                 MessageBox.Show("Error:"+ex.Message);
             }
         }
+
+        //Metodo para actualizar producto
+        public void ActualizarProducto(int id, string codigo, string nombre, decimal precioCompra, int stock, string descripcion)
+        {
+            try
+            {
+                using (SqlConnection conexion = con.Conectar())
+                {
+                    conexion.Open();
+
+                    string query = "update productos set pro_codigo = @codigo, pro_nombre = @nombre, pro_pCompra = @precioCompra, pro_stock = @stock, pro_descripcion = @descripcion where pro_id = @id";
+
+                    SqlCommand command = new SqlCommand(query, conexion);
+
+                    command.Parameters.AddWithValue("@id", id);
+                    command.Parameters.AddWithValue("@codigo", codigo);
+                    command.Parameters.AddWithValue("@nombre", nombre);
+                    command.Parameters.AddWithValue("@precioCompra", precioCompra);
+                    command.Parameters.AddWithValue("@stock", stock);
+                    command.Parameters.AddWithValue("@descripcion", descripcion);
+
+                    command.ExecuteNonQuery();
+
+                    MessageBox.Show("Producto registrado correctamente");
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("El producto no se registro correctamente");
+                MessageBox.Show("Error:"+ex.Message);
+            }
+        }
+        //metodo para traer los datos del producto por el codigo
+        public DataTable TraerProductoPorCodigo(string codigo)
+        {
+            DataTable tabla = new DataTable();
+            try
+            {
+                using (SqlConnection conexion = con.Conectar())
+                {
+                    conexion.Open();
+                    // Buscamos todos los datos donde el código coincida
+                    string query = "SELECT * FROM productos WHERE pro_codigo = @codigo";
+
+                    SqlCommand command = new SqlCommand(query, conexion);
+                    command.Parameters.AddWithValue("@codigo", codigo);
+
+                    SqlDataAdapter adaptador = new SqlDataAdapter(command);
+                    adaptador.Fill(tabla);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al buscar producto: " + ex.Message);
+            }
+            return tabla;
+        }
     }
 }

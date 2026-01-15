@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|d:\\sandoperation\\proyecto_sandoperations\\sandoperations\\sandoperations\\formproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|solutionrelative:sandoperations\\formproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|d:\\sandoperation\\proyecto_sandoperations\\sandoperations\\sandoperations\\formproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|solutionrelative:sandoperations\\formproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\sandoperations\\gestordb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|solutionrelative:sandoperations\\gestordb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\sandoperations\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|solutionrelative:sandoperations\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\sandoperations\\formproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|solutionrelative:sandoperations\\formproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|d:\\sandoperation\\proyecto_sandoperations\\sandoperations\\sandoperations\\formproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB537365-4662-4DEE-88F9-67D85AF88892}|SandOperations\\SandOperations.csproj|solutionrelative:sandoperations\\formproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 329,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,20 +34,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "FormProducto.cs",
               "DocumentMoniker": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\FormProducto.cs",
               "RelativeDocumentMoniker": "SandOperations\\FormProducto.cs",
               "ToolTip": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\FormProducto.cs",
               "RelativeToolTip": "SandOperations\\FormProducto.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAswDgAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAUwFoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-15T05:32:44.724Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FormProducto.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\FormProducto.cs",
               "RelativeDocumentMoniker": "SandOperations\\FormProducto.cs",
@@ -59,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\Program.cs",
               "RelativeDocumentMoniker": "SandOperations\\Program.cs",
@@ -72,13 +72,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "GestorDB.cs",
               "DocumentMoniker": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\GestorDB.cs",
               "RelativeDocumentMoniker": "SandOperations\\GestorDB.cs",
               "ToolTip": "D:\\SandOperation\\Proyecto_SandOperations\\SandOperations\\SandOperations\\GestorDB.cs",
               "RelativeToolTip": "SandOperations\\GestorDB.cs",
-              "ViewState": "AgIAAKUAAAAAAAAAAAAswLIAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAANMAAAAAAAAAAAAIwNQAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-14T21:01:47.363Z",
               "EditorCaption": ""
