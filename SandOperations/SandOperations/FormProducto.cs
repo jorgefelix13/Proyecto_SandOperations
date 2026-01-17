@@ -12,6 +12,9 @@ namespace SandOperations
 {
     public partial class FormProducto : Form
     {
+        // Variable para guardar el ID del producto que estamos editando
+        // Si es 0, significa que es nuevo. Si es > 0, es edición.
+        int idProductoEnEdicion = 0;
         public FormProducto()
         {
             InitializeComponent();
@@ -26,7 +29,27 @@ namespace SandOperations
         }
         private void button4_Click(object sender, EventArgs e)
         {
+            // 1. Creamos la instancia del formulario de búsqueda
+            FormBuscarProducto formBusqueda = new FormBuscarProducto();
 
+            // 2. Lo abrimos como DIÁLOGO (Pausa este formulario hasta que cierres el otro)
+            DialogResult respuesta = formBusqueda.ShowDialog();
+
+            // 3. Si el usuario seleccionó algo (dio doble click)
+            if (respuesta == DialogResult.OK)
+            {
+                // Recuperamos los datos de las variables públicas
+                idProductoEnEdicion = formBusqueda.IdSeleccionado; // GUARDAMOS EL ID
+
+                txtCodigo.Text = formBusqueda.Codigo;
+                txtNombre.Text = formBusqueda.Nombre;
+                txtPrecioCompra.Text = formBusqueda.Precio;
+                txtStock.Text = formBusqueda.Stock;
+                txtDescripcion.Text = formBusqueda.Descripcion;
+
+                // Opcional: Cambiar botón a "Modificar"
+                // btnRegistrar.Text = "Modificar";
+            }
         }
 
        
@@ -83,13 +106,14 @@ namespace SandOperations
                 GestorDB db = new GestorDB();
 
                 // 1. Buscamos el producto en la base de datos
-                DataTable datos = db.TraerProductoPorCodigo(txtCodigo.Text);
+                DataTable datos = db.FiltrarProductos(txtCodigo.Text);
 
                 // 2. Verificamos si encontró algo (Si tiene filas, es que YA EXISTE)
                 if (datos.Rows.Count > 0)
                 {
                     // -- CASO: EL PRODUCTO YA EXISTE --
                     // Llenamos las cajas con la info de la base de datos
+                    idProductoEnEdicion =Convert.ToInt32(datos.Rows[0]["pro_id"].ToString());
                     txtNombre.Text = datos.Rows[0]["pro_nombre"].ToString();
                     txtPrecioCompra.Text = datos.Rows[0]["pro_pCompra"].ToString();
                     txtStock.Text = datos.Rows[0]["pro_stock"].ToString();
@@ -135,13 +159,15 @@ namespace SandOperations
 
             GestorDB bd = new GestorDB();
 
-            int id = Convert.ToInt32(textBox1.Text);
+            //int id = Convert.ToInt32(textBox1.Text);
             string codigo = txtCodigo.Text;
             string nombre = txtNombre.Text;
             int stock = Convert.ToInt32(txtStock.Text);
             string descripcion = txtDescripcion.Text;
 
-            bd.ActualizarProducto(id,codigo,nombre,precioCompra,stock,descripcion);
+            bd.ActualizarProducto(idProductoEnEdicion,codigo,nombre,precioCompra,stock,descripcion);
+
+            LimpiarCampos();
         }
     }
 }

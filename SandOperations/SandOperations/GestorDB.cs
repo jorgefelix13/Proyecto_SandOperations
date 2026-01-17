@@ -201,7 +201,7 @@ namespace SandOperations
 
                     command.ExecuteNonQuery();
 
-                    MessageBox.Show("Producto registrado correctamente");
+                    MessageBox.Show("Producto actualizado correctamente"); 
                 }
             }
             catch(Exception ex)
@@ -211,7 +211,8 @@ namespace SandOperations
             }
         }
         //metodo para traer los datos del producto por el codigo
-        public DataTable TraerProductoPorCodigo(string codigo)
+        // Sugerencia: Cambia el nombre del método a 'FiltrarProductos' porque ya no busca solo por código
+        public DataTable FiltrarProductos(string busqueda)
         {
             DataTable tabla = new DataTable();
             try
@@ -219,11 +220,20 @@ namespace SandOperations
                 using (SqlConnection conexion = con.Conectar())
                 {
                     conexion.Open();
-                    // Buscamos todos los datos donde el código coincida
-                    string query = "SELECT * FROM productos WHERE pro_codigo = @codigo";
+
+                    // CAMBIO 1: Usamos LIKE y OR
+                    // Esto se lee: "Traeme todo donde el código se parezca a lo que escribí 
+                    //               O donde el nombre se parezca a lo que escribí"
+                    string query = @"SELECT * FROM productos 
+                             WHERE pro_codigo LIKE @busqueda 
+                             OR pro_nombre LIKE @busqueda";
 
                     SqlCommand command = new SqlCommand(query, conexion);
-                    command.Parameters.AddWithValue("@codigo", codigo);
+
+                    // CAMBIO 2: Agregamos los signos de porcentaje (%)
+                    // El '%' significa "cualquier texto". 
+                    // "%" + busqueda + "%" significa: "que contenga el texto en cualquier parte"
+                    command.Parameters.AddWithValue("@busqueda", "%" + busqueda + "%");
 
                     SqlDataAdapter adaptador = new SqlDataAdapter(command);
                     adaptador.Fill(tabla);
@@ -231,7 +241,7 @@ namespace SandOperations
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al buscar producto: " + ex.Message);
+                MessageBox.Show("Error al filtrar productos: " + ex.Message);
             }
             return tabla;
         }
