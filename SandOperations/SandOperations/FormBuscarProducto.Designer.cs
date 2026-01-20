@@ -63,7 +63,7 @@
             this.Controls.Add(this.txtBuscarProducto);
             this.Controls.Add(this.dgvProductos);
             this.Name = "FormBuscarProducto";
-            this.Text = "FormBuscarProducto";
+            this.Text = "BUSCAR PRODUCTO";
             this.Load += new System.EventHandler(this.FormBuscarProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.ResumeLayout(false);

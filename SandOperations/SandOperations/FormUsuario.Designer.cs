@@ -254,7 +254,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "FormUsuario";
-            this.Text = "FormUsuario";
+            this.Text = "USUARIOS";
             this.Load += new System.EventHandler(this.FormUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);

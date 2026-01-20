@@ -31,8 +31,46 @@ namespace SandOperations
             else
             {
                 //textBox1.Visible = true;
+                uSUARIOSToolStripMenuItem.Enabled = false;
             }
         }
 
+        private void sALIDASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rEGISTRARToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormUsuario formUsuario = new FormUsuario();
+            
+            formUsuario.ShowDialog();
+        }
+
+        private void rEGISTRARPRODUCTOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormProducto formProducto = new FormProducto();
+
+            formProducto.ShowDialog();
+        }
+
+        private void rEGISTRARENTRADAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormEntradas formEntradas = new FormEntradas();
+
+            formEntradas.ShowDialog();
+        }
+
+        private void rEGISTRARSALIDAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormSalidas formSalidas = new FormSalidas();
+
+            formSalidas.ShowDialog();
+        }
+
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

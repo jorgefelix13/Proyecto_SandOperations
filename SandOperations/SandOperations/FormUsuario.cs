@@ -114,44 +114,50 @@ namespace SandOperations
 
         private void dgvUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Validamos que no se haya dado clic en el encabezado (-1)
-            if (e.RowIndex >= 0)
+            try
             {
-                // Obtenemos la fila actual donde se hizo clic
-                DataGridViewRow fila = dgvUsuarios.Rows[e.RowIndex];
-
-                // 1. Guardamos el ID en nuestra variable global (IMPORTANTE para actualizar)
-                idSeleccionado = Convert.ToInt32(fila.Cells["usu_id"].Value);
-
-                // 2. Llenamos las cajas de texto
-                txtUsuario.Text = fila.Cells["usu_usuario"].Value.ToString();
-                txtPassword.Text = fila.Cells["usu_password"].Value.ToString();
-
-                // 3. Seleccionar el ROL correcto (RadioButtons)
-                string rol = fila.Cells["usu_rol"].Value.ToString();
-                if (rol == "administrador")
+                // Validamos que no se haya dado clic en el encabezado (-1)
+                if (e.RowIndex >= 0)
                 {
-                    rdbAdministrador.Checked = true;
-                }
-                else
-                {
-                    rdbEmpleado.Checked = true;
-                }
+                    // Obtenemos la fila actual donde se hizo clic
+                    DataGridViewRow fila = dgvUsuarios.Rows[e.RowIndex];
 
-                // 4. Seleccionar el ESTADO correcto (Activo/Inactivo)
-                // Convertimos el valor de la celda (que viene como bool o bit)
-                bool activo = Convert.ToBoolean(fila.Cells["usu_activo"].Value);
-                if (activo)
-                {
-                    rdbActivo.Checked = true;
-                }
-                else
-                {
-                    rdbInactivo.Checked = true;
-                }
+                    // 1. Guardamos el ID en nuestra variable global (IMPORTANTE para actualizar)
+                    idSeleccionado = Convert.ToInt32(fila.Cells["usu_id"].Value);
 
-                // Opcional: Cambiar el texto del botón de Guardar a "Modificar" visualmente
-                // btnGuardar.Enabled = false;
+                    // 2. Llenamos las cajas de texto
+                    txtUsuario.Text = fila.Cells["usu_usuario"].Value.ToString();
+                    txtPassword.Text = fila.Cells["usu_password"].Value.ToString();
+
+                    // 3. Seleccionar el ROL correcto (RadioButtons)
+                    string rol = fila.Cells["usu_rol"].Value.ToString();
+                    if (rol == "administrador")
+                    {
+                        rdbAdministrador.Checked = true;
+                    }
+                    else
+                    {
+                        rdbEmpleado.Checked = true;
+                    }
+
+                    // 4. Seleccionar el ESTADO correcto (Activo/Inactivo)
+                    // Convertimos el valor de la celda (que viene como bool o bit)
+                    bool activo = Convert.ToBoolean(fila.Cells["usu_activo"].Value);
+                    if (activo)
+                    {
+                        rdbActivo.Checked = true;
+                    }
+                    else
+                    {
+                        rdbInactivo.Checked = true;
+                    }
+
+                    // Opcional: Cambiar el texto del botón de Guardar a "Modificar" visualmente
+                    // btnGuardar.Enabled = false;
+                }
+            }catch (Exception ex)
+            {
+                MessageBox.Show("Error no hay usuario seleccionado");
             }
         }
     }

@@ -276,5 +276,35 @@ namespace SandOperations
                 throw ex;
             }
         }
+
+        //Esta parte son los metodos para las salidas
+        //Metodo para registrar salida
+        public void RegistrarSalida(int idProducto, int cantidad, string destino, string trabajador)
+        {
+            try
+            {
+                using (SqlConnection conexion = con.Conectar())
+                {
+                    conexion.Open();
+                    // Recuerda: NO necesitamos actualizar el Stock aquí
+                    // Porque ya creamos el TRIGGER en SQL que lo hace solo automágicamente ;)
+                    string query = @"INSERT INTO salidas (sal_proId, sal_cantidad, sal_destino, sal_usuario) 
+                             VALUES (@id, @cant, @destino, @trabajador)";
+
+                    SqlCommand command = new SqlCommand(query, conexion);
+                    command.Parameters.AddWithValue("@id", idProducto);
+                    command.Parameters.AddWithValue("@cant", cantidad);
+                    command.Parameters.AddWithValue("@destino", destino);
+                    command.Parameters.AddWithValue("@trabajador", trabajador);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                // En este caso, mejor lanzar el error para que el ciclo se detenga si algo falla
+                throw ex;
+            }
+        }
     }
 }

@@ -16,7 +16,16 @@ namespace SandOperations
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormEntradas());
+
+            //1. Creamos y mostramos el Splash primero
+            FormSplash splash = new FormSplash();
+
+            //ShowDialog hace que el codigo espere aqui hasta que el splash se cierre
+            if(splash.ShowDialog() == DialogResult.OK)
+            {
+                //2. Si el splash termino (llego a 100), abrimos el login
+                Application.Run(new FormLogin());
+            }
         }
     }
 }

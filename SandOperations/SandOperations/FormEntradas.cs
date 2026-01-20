@@ -16,6 +16,9 @@ namespace SandOperations
         public FormEntradas()
         {
             InitializeComponent();
+            txtNombre.Enabled = false;
+            txtPrecioCompra.Enabled = false;
+            txtStock.Enabled = false;
         } 
 
         private void groupBox2_Enter(object sender, EventArgs e)
@@ -205,22 +208,37 @@ namespace SandOperations
 
         private void txtCantidad_TextChanged(object sender, EventArgs e)
         {
-            // Solo calculamos si ambas cajas tienen números
-            if (decimal.TryParse(txtCantidad.Text, out decimal cant) &&
+            try { 
+                // Solo calculamos si ambas cajas tienen números
+                if (decimal.TryParse(txtCantidad.Text, out decimal cant) &&
                 decimal.TryParse(txtPrecioUnitario.Text, out decimal prec))
-            {
+                {
                 txtTotal.Text = (cant * prec).ToString("0.00");
+                }
+            } catch (Exception ex)
+            {
+                MessageBox.Show("Error longitud alcanzada");
             }
-        }
+}
 
         private void txtPrecioUnitario_TextChanged(object sender, EventArgs e)
         {
-            // Solo calculamos si ambas cajas tienen números
-            if (decimal.TryParse(txtCantidad.Text, out decimal cant) &&
-                decimal.TryParse(txtPrecioUnitario.Text, out decimal prec))
+            try {
+                // Solo calculamos si ambas cajas tienen números
+                if (decimal.TryParse(txtCantidad.Text, out decimal cant) &&
+                    decimal.TryParse(txtPrecioUnitario.Text, out decimal prec))
+                {
+                    txtTotal.Text = (cant * prec).ToString("0.00");
+                }
+            } catch (Exception ex)
             {
-                txtTotal.Text = (cant * prec).ToString("0.00");
+                MessageBox.Show("Error longitud alcanzada");
             }
+        }
+
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
