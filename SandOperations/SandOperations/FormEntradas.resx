@@ -251,7 +251,7 @@
         VFhfKFqQj8dQPk1lcBzHcRzHcQz5PysVJlBK1HpiAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="button4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnBuscar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAQelJREFUeF7t
         3XmcHVWd9/HoOM7izOi4zTPO4ygOSt8OIAquqOwgogg+zjyziLg9OAooSOiq2wnQAmGHJH07QAIkdFV1

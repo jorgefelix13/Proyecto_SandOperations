@@ -245,5 +245,36 @@ namespace SandOperations
             }
             return tabla;
         }
+
+        //Esta parte son los metodos para las entradas 
+        //Metodo para registrar entradas 
+        public void RegistrarEntrada(int idProducto, int cantidad, decimal precio, decimal total, string destino)
+        {
+            try
+            {
+                using (SqlConnection conexion = con.Conectar())
+                {
+                    conexion.Open();
+                    // Recuerda: NO necesitamos actualizar el Stock aquí
+                    // Porque ya creamos el TRIGGER en SQL que lo hace solo automágicamente ;)
+                    string query = @"INSERT INTO entradas (ent_proId, ent_cantidad, ent_precioUnitario, ent_total, ent_destino) 
+                             VALUES (@id, @cant, @precio, @total, @destino)";
+
+                    SqlCommand command = new SqlCommand(query, conexion);
+                    command.Parameters.AddWithValue("@id", idProducto);
+                    command.Parameters.AddWithValue("@cant", cantidad);
+                    command.Parameters.AddWithValue("@precio", precio);
+                    command.Parameters.AddWithValue("@total", total);
+                    command.Parameters.AddWithValue("@destino", destino);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                // En este caso, mejor lanzar el error para que el ciclo se detenga si algo falla
+                throw ex;
+            }
+        }
     }
 }
